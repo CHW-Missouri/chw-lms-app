@@ -1,28 +1,10 @@
 
 /**
- * =========================
- * CHW MIDWEST MODULES (UPDATED)
- * - Complex CE-level questions
- * - Non-repeating answer design
- * - Missouri-specific case studies
- * =========================
+ * CHW MIDWEST MODULES (PROFESSIONAL CE VERSION)
+ * - 5+ sentence Missouri case studies
+ * - Non-repetitive reasoning-based questions
+ * - CE-level complexity
  */
-
-/**
- * GLOBAL POOL (prevents repeating distractors across modules)
- */
-export const globalDistractorPool = [
-  "A temporary disruption in service access unrelated to structural barriers",
-  "A personal dietary preference limiting healthy food selection",
-  "A seasonal agricultural pricing fluctuation affecting short-term availability",
-  "A non-clinical behavioral choice unrelated to environmental access factors",
-  "A short-term emotional response without clinical significance",
-  "A transportation barrier limiting access to essential community resources",
-  "A systemic gap in resource distribution across underserved regions",
-  "A clinically insignificant variation in mood or behavior",
-  "An acute situational stressor without long-term diagnostic criteria",
-  "A misunderstanding of available community health resources"
-];
 
 /**
  * =========================
@@ -37,53 +19,58 @@ export const module1 = {
     {
       id: 1,
       text:
-        "A 34-year-old client in St. Louis reports increasing alcohol use following job loss at a manufacturing plant. Over the past six months, they have experienced sleep disruption, withdrawal from family activities, and difficulty maintaining housing stability. The client expresses feelings of hopelessness but denies immediate suicidal intent. Local access to behavioral health services is limited due to transportation barriers and long clinic wait times. The client relies heavily on a peer support network but lacks formal treatment engagement."
+        "A 36-year-old client in St. Louis lost employment due to company downsizing and has since experienced escalating alcohol use. They report disrupted sleep patterns, reduced appetite, and withdrawal from previously close family relationships. The client expresses shame and reluctance to seek formal treatment due to stigma in their community. Transportation barriers limit access to outpatient behavioral health services. Over the past four months, their housing situation has become unstable."
     },
-
     {
       id: 2,
       text:
-        "A rural family in southeast Missouri reports that their teenage son has begun misusing prescription opioids following a sports injury. The nearest behavioral health provider is over 40 miles away, and transportation is inconsistent due to limited public transit options. The family expresses concern about stigma in their small community, which discourages them from seeking help. School counselors are aware but report limited intervention resources. The situation has escalated over the past three months."
+        "A rural resident in southern Missouri began misusing prescription pain medication following a workplace injury. The nearest clinic offering medication-assisted treatment is over 50 miles away, requiring unreliable transportation. Family members report increasing behavioral changes including irritability and social withdrawal. The client has expressed ambivalence about stopping use due to unmanaged chronic pain. Local support groups are available but not regularly attended due to travel constraints."
     },
-
     {
       id: 3,
       text:
-        "A 28-year-old pregnant client in Kansas City presents with untreated anxiety and intermittent opioid use. She reports inconsistent prenatal care due to unstable housing and difficulty accessing Medicaid-covered providers. The client expresses fear of child protective services involvement if she discloses substance use. She also reports isolation after moving from another state and limited family support. Symptoms have worsened during the second trimester."
+        "A 29-year-old pregnant client in Kansas City reports intermittent opioid use and inconsistent prenatal care. She recently relocated and lacks a stable support system or established healthcare provider. Fear of legal consequences prevents her from fully disclosing substance use during appointments. She reports increasing anxiety and difficulty maintaining daily routines. Housing instability has further complicated access to consistent care."
     },
-
     {
       id: 4,
       text:
-        "A middle-aged client in rural Missouri with a history of alcohol use disorder recently returned to the community after incarceration. They report difficulty reintegrating into employment and face community stigma that limits social reintegration. The client has inconsistent access to medication-assisted treatment due to pharmacy shortages. Emotional distress has increased due to lack of structured support systems. They are currently in early recovery but at high relapse risk."
+        "A middle-aged client recently released from incarceration in Missouri is attempting to reintegrate into the workforce. They report difficulty securing employment due to background checks and community stigma. The client has a history of alcohol use disorder and limited access to structured recovery programs. Emotional distress has increased due to isolation and lack of social support. They have not yet re-engaged with primary care or behavioral health services."
     },
-
     {
       id: 5,
       text:
-        "A 22-year-old college student in Columbia, Missouri reports escalating panic attacks and increased cannabis use to manage academic stress. They report difficulty accessing campus mental health services due to long wait times and appointment delays. The student has withdrawn from social groups and is struggling academically. They express uncertainty about continuing enrollment. Symptoms have intensified during exam periods."
+        "A 21-year-old college student in Columbia reports worsening anxiety and increased reliance on cannabis to manage academic pressure. They describe difficulty accessing counseling services due to long waitlists on campus. Social withdrawal and declining academic performance have become noticeable over the past semester. The student reports uncertainty about continuing enrollment. Sleep disruption and decreased concentration have intensified during exam periods."
     }
   ],
 
   questions: [
     {
       question:
-        "Which factor most strongly contributes to the client's increased risk of substance misuse in rural Missouri settings?",
+        "Which factor most significantly increases vulnerability to substance misuse in Missouri populations experiencing economic instability?",
 
       correctAnswer:
-        "Limited access to behavioral health services combined with geographic isolation and transportation barriers",
+        "Combined effects of structural stressors including unemployment, limited healthcare access, and reduced social support systems",
 
-      distractors: globalDistractorPool
+      distractors: [
+        "Temporary emotional responses unrelated to environmental conditions",
+        "Short-term dietary changes affecting mood regulation",
+        "Isolated behavioral choices without external influence",
+        "Seasonal fluctuations in social engagement patterns"
+      ]
     },
-
     {
       question:
-        "Which approach best supports recovery-oriented care in clients experiencing co-occurring mental health and substance use disorders?",
+        "What is the most effective CHW-supported approach for clients with co-occurring mental health and substance use challenges?",
 
       correctAnswer:
-        "Integrated, trauma-informed care that addresses both behavioral health and environmental stressors",
+        "Integrated care coordination that addresses behavioral health, social determinants, and access barriers simultaneously",
 
-      distractors: globalDistractorPool
+      distractors: [
+        "Encouraging self-management without external support systems",
+        "Focusing solely on symptom reduction without environmental assessment",
+        "Providing general wellness advice without care coordination",
+        "Referring only to emergency services when symptoms escalate"
+      ]
     }
   ]
 };
@@ -101,53 +88,58 @@ export const module2 = {
     {
       id: 1,
       text:
-        "A family living in rural Missouri reports that the nearest full-service grocery store is 18 miles away. They rely primarily on gas stations and dollar stores for food purchases. The family reports difficulty accessing fresh produce due to transportation limitations and rising fuel costs. Children in the household consume mostly processed foods with limited nutritional variety. Community food assistance programs are available but underutilized due to lack of awareness."
+        "A family living in rural Missouri reports that the nearest full-service grocery store is 20 miles away. They primarily rely on convenience stores for food purchases due to transportation limitations. Fresh produce is rarely available in their immediate community. Children in the household consume a diet high in processed foods. The family has limited awareness of local food assistance programs."
     },
-
     {
       id: 2,
       text:
-        "An elderly client in East St. Louis reports difficulty maintaining a balanced diet after the closure of the only nearby grocery store. They rely on fixed income benefits and have limited mobility due to chronic illness. Meals on Wheels provides partial support but does not fully meet dietary needs. The client reports increased fatigue and weight loss over the past several months. Family support is limited due to geographic separation."
+        "An elderly resident in East St. Louis lives on a fixed income and has limited mobility due to chronic illness. After the closure of a nearby grocery store, they now depend on irregular family assistance for food access. Meals on Wheels provides partial support but does not fully meet nutritional needs. The client reports fatigue and unintended weight loss over several months. Transportation to food pantries is inconsistent."
     },
-
     {
       id: 3,
       text:
-        "A single-parent household in Kansas City experiences inconsistent access to fresh food due to unpredictable work hours and limited childcare options. The parent reports reliance on fast food due to time constraints and affordability. Nutritional education resources are available but have not been accessed due to scheduling barriers. Children in the household show early signs of dietary imbalance. The household recently applied for SNAP benefits."
+        "A single parent in Kansas City works multiple part-time jobs with unpredictable schedules. Due to time constraints, the household relies heavily on fast food and packaged meals. The parent reports difficulty attending nutrition education programs because of scheduling conflicts. Children in the household show early signs of dietary imbalance. SNAP benefits have been recently applied for but not yet approved."
     },
-
     {
       id: 4,
       text:
-        "A migrant farmworker community in Missouri reports seasonal food insecurity during off-harvest months. Access to culturally appropriate foods is limited in local stores. Community members rely heavily on bulk purchasing and shared resources. Transportation to urban grocery centers is inconsistent. Nutritional intake decreases significantly during winter months."
+        "A migrant worker community in rural Missouri experiences seasonal food insecurity during non-harvest months. Access to culturally familiar foods is limited in nearby stores. Community members often share bulk food resources when available. Transportation to larger grocery centers is inconsistent and costly. Nutritional intake significantly declines during winter months."
     },
-
     {
       id: 5,
       text:
-        "A suburban Missouri neighborhood experiences a growing disparity in food access following the relocation of a major supermarket chain. Residents report increased reliance on convenience stores and vending machines. Fresh produce availability has declined significantly. Community health workers note rising rates of diet-related chronic conditions. Local advocacy groups are beginning to organize food access interventions."
+        "A suburban neighborhood in Missouri recently experienced the closure of its only full-service grocery store. Residents now rely on gas stations and convenience stores for daily food purchases. Availability of fresh fruits and vegetables has decreased significantly. Local health workers have noted an increase in diet-related chronic conditions. Community groups are beginning to organize food access initiatives."
     }
   ],
 
   questions: [
     {
       question:
-        "What best describes a structural food desert in Missouri communities?",
+        "What structural factor most accurately defines a food desert in Missouri communities?",
 
       correctAnswer:
-        "A geographic area with limited access to affordable, nutrient-dense food options due to systemic distribution barriers",
+        "Geographic and economic barriers limiting consistent access to affordable, nutritious food sources",
 
-      distractors: globalDistractorPool
+      distractors: [
+        "Temporary shortages in grocery store inventory cycles",
+        "Individual food preference variations across households",
+        "Seasonal changes in agricultural production alone",
+        "Short-term disruptions in food marketing systems"
+      ]
     },
-
     {
       question:
-        "Which intervention most effectively improves long-term food security in underserved Missouri populations?",
+        "Which intervention most effectively improves long-term food security in underserved communities?",
 
       correctAnswer:
-        "Community-based food access programs combined with transportation and nutrition education support",
+        "Multi-level interventions combining food access programs, transportation support, and nutrition education",
 
-      distractors: globalDistractorPool
+      distractors: [
+        "Encouraging individual dietary restriction without system support",
+        "Providing informational pamphlets without resource access",
+        "Relying solely on emergency food assistance programs",
+        "Increasing fast food availability in underserved areas"
+      ]
     }
   ]
 };
