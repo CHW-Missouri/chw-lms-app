@@ -3,7 +3,6 @@
  * Clean conflict-free version
  */
 
-export const TEST_FLAG = "MODULES WORKING 2026";
 export const module1 = {
   title: "Addiction and Mental Health",
 
